@@ -7,8 +7,9 @@ const finderStatus = document.querySelector("[data-finder-status]");
 const finderResults = document.querySelector("[data-finder-results]");
 const finderMarkers = document.querySelectorAll("[data-map-city]");
 const revealTargets = document.querySelectorAll(
-  ".reveal, .story-lines, .section-intro, .india-map, .story-track article, .journey-line li, .support-copy, .support-form, .centre-grid article, details"
+  ".reveal, .story-lines, .section-intro, .india-map, .story-track article, .journey-line li, .life-copy, .life-image, .caregiver-content, .benefit-grid article, .support-copy, .support-form, .centre-grid article, .voice-card, .voice-strip, .footer-brand, .footer-column, .footer-disclaimer, .footer-credit-row, .footer-bottom"
 );
+let lastScrollY = window.scrollY;
 
 const centres = [
   {
@@ -97,8 +98,11 @@ const observer = new IntersectionObserver(
 revealTargets.forEach((target) => observer.observe(target));
 
 const onScroll = () => {
-  header.classList.toggle("is-scrolled", window.scrollY > 30);
-  document.documentElement.style.setProperty("--scroll", window.scrollY.toString());
+  const currentScrollY = window.scrollY;
+  header.classList.toggle("is-scrolled", currentScrollY > 30);
+  header.classList.toggle("is-hidden", currentScrollY > lastScrollY && currentScrollY > 140);
+  document.documentElement.style.setProperty("--scroll", currentScrollY.toString());
+  lastScrollY = currentScrollY;
 };
 
 window.addEventListener("scroll", onScroll, { passive: true });
