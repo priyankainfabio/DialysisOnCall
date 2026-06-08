@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dialysis On Call | Travel Should Not Stop</title>
+    <meta name="description" content="Dialysis On Call helps kidney failure patients find dialysis centres across India while travelling.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="Dialysis On Call home">
+        <img src="assets/logo.png" alt="Dialysis On Call">
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#network">Network</a>
+        <a href="#journey">How it works</a>
+        <a href="#support">Support</a>
+        <a href="#centres">Centres</a>
+      </nav>
+      <a class="nav-action" href="#support">Get help</a>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <video class="hero-video" src="assets/hero.mp4" autoplay muted loop playsinline poster="assets/logo.png"></video>
+        <div class="hero-shade"></div>
+        <div class="hero-inner">
+          <div class="hero-content">
+            <p class="eyebrow reveal">Humanitarian dialysis travel assistance across India</p>
+            <h1 class="hero-title reveal delay-1">Travel Should Not Stop Because Dialysis Cannot.</h1>
+            <p class="hero-copy reveal delay-2">Helping kidney failure patients find dialysis centres across India before they travel.</p>
+            <div class="hero-actions reveal delay-3">
+              <a class="button primary" href="#network">Find Dialysis Centre</a>
+              <a class="button secondary" href="#support">Request Patient Support</a>
+            </div>
+          </div>
+          <div class="hero-visual reveal delay-2" aria-label="Dialysis On Call travel support preview">
+            <video src="assets/hero.mp4" autoplay muted loop playsinline></video>
+            <div class="visual-tint"></div>
+            <img class="visual-logo" src="assets/logo.png" alt="">
+            <span class="visual-pill pill-one">Verified centres</span>
+            <span class="visual-pill pill-two">Patient support</span>
+            <span class="visual-pill pill-three">India network</span>
+            <div class="visual-route" aria-hidden="true">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="visual-card">
+              <small>Next destination</small>
+              <strong>Dialysis planned before travel</strong>
+              <p>Search city, check centre details, request support.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reasons">
+        <div class="section-intro compact">
+          <p class="kicker">Why journeys pause</p>
+        </div>
+        <p class="wide-copy">Dialysis dependency often limits more than movement. It limits confidence, social life, family participation and emotional well-being. Dialysis on Call has been created to help patients travel, connect and live with dignity by making dialysis access easier across India.</p>
+        <div class="story-track">
+          <article class="journey-card wedding-card">
+            <span>Daughter's wedding</span>
+            <p>A father needs care arranged before the ceremony date.</p>
+          </article>
+          <article class="journey-card pilgrimage-card">
+            <span>Pilgrimage</span>
+            <p>A grandmother wants dignity, not uncertainty, on the road.</p>
+          </article>
+          <article class="journey-card emergency-card">
+            <span>Family emergency</span>
+            <p>Treatment planning cannot wait for office hours.</p>
+          </article>
+          <article class="journey-card reunion-card">
+            <span>Meeting grandchildren</span>
+            <p>Care access should not decide whether a reunion happens.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="life-moments">
+        <div class="life-copy">
+          <p class="kicker">Restore movement</p>
+          <h2>Some journeys are too important to miss.</h2>
+          <p>A family meal, a celebration, a pilgrimage, or a visit to loved ones should not feel impossible because dialysis has to be planned in another city.</p>
+          <p>Dialysis on Call helps patients and caregivers search early, understand centre options, and request support before travel begins.</p>
+          <div class="life-actions">
+            <a class="button primary" href="#network">Find a centre</a>
+            <a class="button secondary" href="#support">Talk to support</a>
+          </div>
+        </div>
+        <figure class="life-image">
+          <img src="assets/elder.jpg" alt="Older couple sharing a joyful family meal">
+        </figure>
+      </section>
+
+      <section class="network" id="network">
+        <div class="section-intro">
+          <p class="kicker">Search across India</p>
+          <h2>Find Dialysis Centres Across India</h2>
+          <p>Search by city, location or travel destination and access important dialysis centre information before you travel.</p>
+        </div>
+        
+        <div class="finder-shell india-map">
+          <form class="finder-panel" data-finder-form>
+            <button class="nearby-button" type="button" data-nearby>
+              <span aria-hidden="true">+</span>
+              Search Nearby
+            </button>
+            <div class="or-divider">or</div>
+            <label class="finder-search">
+              <span class="sr-only">Search by location, city, or centre</span>
+              <input data-location-search type="search" placeholder="Search by location, city, or dialysis centre" autocomplete="off">
+            </label>
+            <div class="finder-options" aria-label="Treatment filters">
+              <label><input data-filter value="verified" type="checkbox" checked> Verified Centres</label>
+              <label><input data-filter value="support" type="checkbox" checked> Patient Support</label>
+              <label><input data-filter value="hemodialysis" type="checkbox" checked> In-Centre Hemodialysis</label>
+              <label><input data-filter value="holiday" type="checkbox"> Travel / Holiday Dialysis</label>
+            </div>
+            <div class="finder-actions">
+              <button class="button primary" type="submit">Search</button>
+              <button class="button reset-button" type="button" data-reset-finder>Reset</button>
+            </div>
+            <div class="finder-status" data-finder-status>Showing 10 centre locations across India.</div>
+            <div class="finder-results" data-finder-results aria-live="polite"></div>
+          </form>
+          <div class="finder-map" aria-label="Interactive India dialysis centre map">
+            <div class="map-title">India Map</div>
+             
+            <img class="india-map-image" src="assets/india.jpg" alt="Neon India map">
+            
+            <button class="map-marker m-delhi" type="button" data-map-city="Delhi" data-count="18" aria-label="Delhi, 18 centres"><span>18</span><strong>Delhi</strong></button>
+            <button class="map-marker m-jaipur" type="button" data-map-city="Jaipur" data-count="7" aria-label="Jaipur, 7 centres"><span>7</span><strong>Jaipur</strong></button>
+            <button class="map-marker m-mumbai" type="button" data-map-city="Mumbai" data-count="22" aria-label="Mumbai, 22 centres"><span>22</span><strong>Mumbai</strong></button>
+            <button class="map-marker m-ahmedabad" type="button" data-map-city="Ahmedabad" data-count="10" aria-label="Ahmedabad, 10 centres"><span>10</span><strong>Ahmedabad</strong></button>
+            <button class="map-marker m-varanasi" type="button" data-map-city="Varanasi" data-count="6" aria-label="Varanasi, 6 centres"><span>6</span><strong>Varanasi</strong></button>
+            <button class="map-marker m-haridwar" type="button" data-map-city="Haridwar" data-count="4" aria-label="Haridwar, 4 centres"><span>4</span><strong>Haridwar</strong></button>
+            <button class="map-marker m-kolkata" type="button" data-map-city="Kolkata" data-count="14" aria-label="Kolkata, 14 centres"><span>14</span><strong>Kolkata</strong></button>
+            <button class="map-marker m-bengaluru" type="button" data-map-city="Bengaluru" data-count="16" aria-label="Bengaluru, 16 centres"><span>16</span><strong>Bengaluru</strong></button>
+            <button class="map-marker m-chennai" type="button" data-map-city="Chennai" data-count="13" aria-label="Chennai, 13 centres"><span>13</span><strong>Chennai</strong></button>
+            <button class="map-marker m-goa" type="button" data-map-city="Goa" data-count="5" aria-label="Goa, 5 centres"><span>5</span><strong>Goa</strong></button>
+            <aside class="map-detail" data-map-detail>
+              <span>India network</span>
+              <strong>Select a city to view centre details.</strong>
+            </aside>
+          </div>
+        </div>
+        <p class="microcopy">Planning travel for a patient? Search early and request support before finalising your journey.</p>
+      </section>
+
+      <section class="journey" id="journey">
+        <div class="section-intro">
+          <p class="kicker">How it works</p>
+          <h2>How Dialysis on Call Helps Patients Travel Better</h2>
+        </div>
+        <ol class="journey-line">
+          <li><span>01</span><strong>Search destination</strong><p>Enter the city, temple town, business hub, or family address.</p></li>
+          <li><span>02</span><strong>Explore centres</strong><p>See nearby dialysis options with practical planning details.</p></li>
+          <li><span>03</span><strong>Check verified listings</strong><p>Prioritize trustworthy centres before travel begins.</p></li>
+          <li><span>04</span><strong>Request support</strong><p>Let the team help when searching feels difficult.</p></li>
+          <li><span>05</span><strong>Travel confidently</strong><p>Move again with treatment planned around the journey.</p></li>
+        </ol>
+      </section>
+
+      <section class="support" id="support">
+        <div class="support-copy">
+          <p class="kicker">Patient support</p>
+          <h2>When Searching Feels Difficult, Our Support Team Can Help.</h2>
+          <p>Patients and caregivers may not always be able to call multiple centres, check details, understand availability or coordinate slots while planning travel. Our role is to guide, assist and connect.</p>
+          <ul class="support-list">
+            <li>Find dialysis centres in your destination city</li>
+            <li>Understand centre details and available facilities</li>
+            <li>Assist with slot coordination</li>
+            <li>Guide caregivers through the process</li>
+          </ul>
+        </div>
+        <form class="support-form">
+          <label>Patient Name<input type="text" placeholder="Patient name"></label>
+          <label>Caregiver Name<input type="text" placeholder="Caregiver name"></label>
+          <label>Phone Number<input type="tel" placeholder="Contact number"></label>
+          <label>Current City<input type="text" placeholder="Current city"></label>
+          <label>Travel Destination<input type="text" placeholder="Where are you travelling?"></label>
+          <label>Date of Travel<input type="date"></label>
+          <label>Preferred Dialysis Date<input type="date"></label>
+          <label>Dialysis Frequency<input type="text" placeholder="Example: Three times a week"></label>
+          <label>Special Medical Requirement<input type="text" placeholder="Optional"></label>
+          <button class="button primary" type="submit">Request support</button>
+        </form>
+      </section>
+
+      
+
+      <section class="caregiver">
+        <div class="caregiver-bg" aria-hidden="true"></div>
+        <div class="caregiver-content">
+          <p class="kicker">For families</p>
+          <h2>Built for Patients. Equally Built for <em>Families.</em></h2>
+          <p>In many dialysis journeys, the caregiver carries the invisible burden: searching for centres, making calls, checking reports, confirming slots, managing travel and protecting the patient from stress.</p>
+          <span class="caregiver-wave" aria-hidden="true"></span>
+        </div>
+        <div class="benefit-grid">
+          <article>
+            <span class="benefit-icon">01</span>
+            <strong>Search dialysis centres before travel</strong>
+            <p>Find the right centre in your destination before you go.</p>
+            <a href="#network" aria-label="Search dialysis centres before travel">&rarr;</a>
+          </article>
+          <article>
+            <span class="benefit-icon">02</span>
+            <strong>Understand available facilities</strong>
+            <p>Know what services and support are available.</p>
+            <a href="#network" aria-label="Understand available facilities">&rarr;</a>
+          </article>
+          <article>
+            <span class="benefit-icon">03</span>
+            <strong>Request coordination support</strong>
+            <p>Our team can help coordinate with centres on your behalf.</p>
+            <a href="#support" aria-label="Request coordination support">&rarr;</a>
+          </article>
+          <article>
+            <span class="benefit-icon">04</span>
+            <strong>Reduce last-minute panic</strong>
+            <p>Plan early and travel with confidence and peace.</p>
+            <a href="#support" aria-label="Reduce last-minute panic">&rarr;</a>
+          </article>
+          <article>
+            <span class="benefit-icon">05</span>
+            <strong>Plan dialysis around travel dates</strong>
+            <p>Align treatment schedules with your travel plans.</p>
+            <a href="#journey" aria-label="Plan dialysis around travel dates">&rarr;</a>
+          </article>
+          <article>
+            <span class="benefit-icon">06</span>
+            <strong>Make informed decisions</strong>
+            <p>Stay updated and consult your doctor with clarity.</p>
+            <a href="#faq" aria-label="Make informed decisions">&rarr;</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="section-intro compact">
+          <p class="kicker">Questions</p>
+          <h2>Frequently Asked Questions</h2>
+        </div>
+        <details open>
+          <summary>What is Dialysis on Call?</summary>
+          <p>Dialysis on Call is a web platform that lists dialysis centres across India and helps dialysis patients access information and support while travelling.</p>
+        </details>
+        <details open>
+          <summary>Is Dialysis On Call a hospital?</summary>
+          <p>No. Dialysis on Call is not a dialysis centre. It is a patient-support platform that helps users find and connect with dialysis centres in different cities.</p>
+        </details>
+        <details>
+          <summary>Who can use the platform?</summary>
+          <p>Dialysis patients, caregivers, family members and anyone planning travel for a kidney failure patient can use Dialysis on Call.</p>
+        </details>
+        <details>
+          <summary>Can your team help with booking?</summary>
+          <p>Yes. If patients or caregivers find it difficult to coordinate with centres, the support team can assist with basic booking coordination and guidance.</p>
+        </details>
+        <details>
+          <summary>Are all dialysis centres verified?</summary>
+          <p>Many centres are verified and marked on the platform. Users should review details carefully and consult their nephrologist before travelling.</p>
+        </details>
+        <details>
+          <summary>Does this replace medical advice?</summary>
+          <p>No. Patients should always follow their nephrologist's guidance for treatment, fitness to travel, and records.</p>
+        </details>
+      </section>
+    </main>
+
+    <footer class="site-footer footer-redesign">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Dialysis On Call">
+          <p>Dialysis on Call helps kidney failure patients and families find dialysis centres across India while travelling.</p>
+        </div>
+        <nav class="footer-column" aria-label="Quick links">
+          <h3>Quick Links</h3>
+          <a href="#home">Home</a>
+          <a href="#network">Network</a>
+          <a href="#journey">Why it matters</a>
+          <a href="#centres">List Your Centre</a>
+        </nav>
+        <nav class="footer-column" aria-label="Support">
+          <h3>Support</h3>
+          <a href="#support">Get help</a>
+          <a href="#faq">FAQ</a>
+          <a href="#network">Find a centre</a>
+          <a href="#support">Patient coordination</a>
+        </nav>
+        <div class="footer-column">
+          <h3>Contact</h3>
+          <a href="tel:+918800855340">+91 88008 55340</a>
+          <a href="mailto:info@dialysisoncall.in">info@dialysisoncall.in</a>
+          <span>Delhi, India</span>
+        </div>
+      </div>
+
+      <div class="footer-disclaimer">
+        <strong>Important disclaimer:</strong>
+        <span>Dialysis on Call provides dialysis centre information and patient support assistance. It does not replace medical consultation, emergency medical care or advice from a nephrologist.</span>
+      </div>
+
+      <div class="footer-credit-row">
+        <div class="site-credit" aria-label="Site credits">
+          <a href="https://fabulousmedia.in/" target="_blank" rel="noopener noreferrer" aria-label="FabulousMedia">
+            <img src="assets/fabulous-logo.png" alt="FabulousMedia">
+          </a>
+          <span aria-hidden="true"></span>
+          <a href="https://gocommercially.com/" target="_blank" rel="noopener noreferrer" aria-label="GoCommercially">
+            <img src="assets/gocommercially-logo.png" alt="GoCommercially">
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; 2026 Dialysis On Call. All rights reserved.</span>
+        <span>Made with care for travelling families</span>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
